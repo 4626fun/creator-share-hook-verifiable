@@ -1,0 +1,27 @@
+[package]
+name = "creator-share-hook"
+version = "0.1.0"
+description = "4626 Transfer Hook for Solana spoke — buy detection, lottery entry recording, fee harvesting, winner notification"
+edition = "2021"
+# MSRV-aware resolver; SBF build still requires platform-tools v1.52+ (scripts/build-sbf.sh).
+rust-version = "1.75"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "creator_share_hook"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+idl-build = ["anchor-lang/idl-build", "anchor-spl/idl-build"]
+
+[dependencies]
+anchor-lang = { version = "1.0.2", features = ["init-if-needed"] }
+anchor-spl = { version = "1.0.2", features = ["token_2022"] }
+bytemuck = { version = "1", features = ["derive"] }
+spl-transfer-hook-interface = "2.1.0"
+spl-tlv-account-resolution = "0.11.1"
+
