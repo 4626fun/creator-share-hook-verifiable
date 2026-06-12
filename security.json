@@ -1,9 +1,12 @@
 {
   "name": "4626 Creator Share Hook",
+  "logo": "https://4626.fun/assets/logo-mark-opaque-1024.png",
+  "description": "Token-2022 transfer hook powering 4626 creator share lottery entries and fees on Solana.",
   "project_url": "https://4626.fun",
-  "contacts": "email:hello@4626.fun",
+  "contacts": ["email:hello@4626.fun"],
   "policy": "https://github.com/4626fun/creator-share-hook-verifiable/blob/main/SECURITY.md",
-  "preferred_languages": "en",
+  "preferred_languages": ["en"],
   "source_code": "https://github.com/4626fun/creator-share-hook-verifiable",
-  "source_release": "94e2854b5d52d0c98692b35c58bcdce89ac9fa00"
+  "source_release": "94e2854b5d52d0c98692b35c58bcdce89ac9fa00",
+  "version": "1.0.0"
 }
